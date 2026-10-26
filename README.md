@@ -80,13 +80,11 @@ pip install opencv-contrib-python-headless matplotlib
 1. Save the modified image in the local directory using `cv2.imwrite()`.
 2. Verify that the image has been saved successfully.
 
----
 
 ## PROGRAM
 
 ### Step 1: Read and Display an Image
 
-```python
 import cv2
 import matplotlib.pyplot as plt
 
@@ -101,13 +99,12 @@ plt.imshow(img_rgb, cmap='viridis')  # You can change 'viridis' to another cmap 
 plt.title("Original Image")
 plt.axis('off')  # Removes axis ticks and labels
 plt.show()
-```
+
 
 ### Step 2: Draw Shapes and Add Text
 
 #### 2.1 Draw a Line
 
-```python
 # Load the image
 image = cv2.imread('varshan.jpeg') 
 
@@ -123,11 +120,11 @@ plt.imshow(line_img, cmap='viridis')
 plt.title("Image with Line")
 plt.axis('off')  
 plt.show()
-```
+
 
 #### 2.2 Draw a Circle
 
-```python
+
 # Load the image
 image = cv2.imread('varshan.jpeg') 
 
@@ -143,11 +140,11 @@ plt.imshow(circle_img, cmap='viridis')
 plt.title("Image with Circle")
 plt.axis('off')  
 plt.show()
-```
+
 
 #### 2.3 Draw a Rectangle
 
-```python
+
 # Load the image
 image = cv2.imread('Qno. 1.jpg') 
 
@@ -164,11 +161,10 @@ plt.imshow(rectangle_img, cmap='viridis')
 plt.title("Image with Rectangle")
 plt.axis('off')  
 plt.show()
-```
+
 
 #### 2.4 Add Text to the Image
 
-```python
 # Load the image
 image = cv2.imread('Qno. 1.jpg') 
 
@@ -184,11 +180,10 @@ plt.imshow(text_img, cmap='viridis')
 plt.title("Image with Text")
 plt.axis('off')  
 plt.show()
-```
+
 
 ### Step 3: Color Space Conversion
 
-```python
 # Load the image
 image = cv2.imread('varshan.jpeg') 
 
@@ -229,11 +224,11 @@ image_hsv_to_rgb = cv2.cvtColor(image_hsv, cv2.COLOR_HSV2RGB)
 plt.imshow(image_hsv_to_rgb)
 plt.title("HSV to RGB Image")
 plt.axis("off")
-```
+
 
 ### Step 4: Pixel Manipulation
 
-```python
+
 # Modify a block of pixels (300x300) to white, starting from (200, 200)
 image[200:500, 200:500] = [255, 255, 255]  # Rows: 200-499, Columns: 200-499
 
@@ -245,11 +240,10 @@ plt.imshow(image_rgb)
 plt.title("Image with 300x300 White Block")
 plt.axis("off")
 plt.show()
-```
+
 
 ### Step 5: Image Resizing
 
-```python
 image = cv2.imread('varshan.jpeg') 
 image.shape
 
@@ -266,11 +260,10 @@ plt.imshow(resized_image_rgb)
 plt.title("Resized Image (Half Size)")
 plt.axis("off")
 plt.show()
-```
+
 
 ### Step 6: Image Cropping
 
-```python
 # Load the image
 image = cv2.imread('varshan.jpeg')
 
@@ -287,11 +280,10 @@ plt.imshow(roi_rgb)
 plt.title("Cropped Region of Interest (ROI)")
 plt.axis("off")
 plt.show()
-```
+
 
 ### Step 7: Image Flipping
 
-```python
 # Load the image
 image = cv2.imread('varshan.jpeg')
 
@@ -316,45 +308,42 @@ flipped_vertically_rgb = cv2.cvtColor(flipped_vertically, cv2.COLOR_BGR2RGB)
 plt.imshow(flipped_vertically_rgb)
 plt.title("Flipped Vertically")
 plt.axis("off")
-```
 
----
+
 
 ## OUTPUT
 
 #The following outputs are obtained:
 
-#1. Original image displayed using OpenCV and Matplotlib.
+# 1. Original image displayed using OpenCV and Matplotlib.
 
 
 <img width="322" height="510" alt="image" src="https://github.com/user-attachments/assets/8dcd9ece-74e0-4822-9bb1-6184d0288f13" />
 
 
-
-
-#2. Image with a line drawn from the top-left to the bottom-right.
+# 2. Image with a line drawn from the top-left to the bottom-right.
 
 <img width="332" height="512" alt="image" src="https://github.com/user-attachments/assets/7000d52c-b633-4aa9-8f2d-7d3771d3ad76" />
 
 
-#3. Image with a circle at the center.
+# 3. Image with a circle at the center.
 
 <img width="322" height="507" alt="image" src="https://github.com/user-attachments/assets/07743055-8e88-4bec-97e4-be991dfdbda0" />
 
 
-#4. Image with a rectangle around its boundary.
+# 4. Image with a rectangle around its boundary.
 
 <img width="315" height="505" alt="image" src="https://github.com/user-attachments/assets/d4522a9b-36ec-4f0d-9ea1-9587bc92ae90" />
 
 
 
-#5. Image with the text "OpenCV Drawing".
+# 5. Image with the text "OpenCV Drawing".
 
 <img width="308" height="510" alt="image" src="https://github.com/user-attachments/assets/42db6c75-06f4-4094-a8f3-80edd3892b8c" />
 
 
 
-#6. HSV, grayscale, and YCrCb color space conversions.
+# 6. HSV, grayscale, and YCrCb color space conversions.
 
 
 <img width="321" height="512" alt="image" src="https://github.com/user-attachments/assets/e0ceef52-40c0-4237-a2c4-45f560aa1700" />
@@ -365,32 +354,32 @@ plt.axis("off")
 
 
 
-#7. Image converted from HSV back to RGB.
+# 7. Image converted from HSV back to RGB.
 
 <img width="316" height="515" alt="image" src="https://github.com/user-attachments/assets/2642021a-e8a0-4298-9db4-92a438e5515c" />
 
 
-#8. Pixel value displayed and a white region added to the image.
+# 8. Pixel value displayed and a white region added to the image.
 
 <img width="352" height="517" alt="image" src="https://github.com/user-attachments/assets/ba410323-cfe5-46ec-b3eb-a62ddd87487c" />
 
 
-#9. Image resized to half its original dimensions.
+# 9. Image resized to half its original dimensions.
 
 <img width="642" height="516" alt="image" src="https://github.com/user-attachments/assets/5b4dcd65-fd47-4c3d-a634-a504d60ebb07" />
 
 
-#10. Cropped region of interest displayed.
+# 10. Cropped region of interest displayed.
 
 <img width="501" height="520" alt="image" src="https://github.com/user-attachments/assets/d520c8ba-b2f3-434e-a81b-eda7e3f86da5" />
 
 
-#11. Horizontally flipped image displayed.
+# 11. Horizontally flipped image displayed.
 
 <img width="308" height="508" alt="image" src="https://github.com/user-attachments/assets/c5ab7e29-03c7-4710-9e25-34a2153cad25" />
 
 
-#12. Vertically flipped image displayed.
+# 12. Vertically flipped image displayed.
 
 <img width="326" height="520" alt="image" src="https://github.com/user-attachments/assets/a1ed2a41-ed03-4f54-963f-0283dc773a74" />
 
