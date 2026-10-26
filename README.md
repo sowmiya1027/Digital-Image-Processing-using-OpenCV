@@ -1,6 +1,6 @@
 # Digital-Image-Processing-using-OpenCV
 # Experiment 1: Image Handling and Pixel Transformations Using OpenCV
-```
+
 **Name:** Sowmiya R
 **Register Number:** 212225040420  
 **Experiment:** Image Handling and Pixel Transformations Using OpenCV
