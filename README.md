@@ -106,7 +106,7 @@ plt.show()
 #### 2.1 Draw a Line
 
 # Load the image
-image = cv2.imread('varshan.jpeg') 
+image = cv2.imread('Mine.jpeg') 
 
 # Convert BGR (OpenCV's default) to RGB (Matplotlib's expected color order)
 ```
@@ -129,7 +129,7 @@ plt.show()
 
 
 # Load the image
-image = cv2.imread('varshan.jpeg') 
+image = cv2.imread('Mine.jpeg') 
 
 # Convert BGR (OpenCV's default) to RGB (Matplotlib's expected color order)
 ```
@@ -153,7 +153,7 @@ plt.show()
 
 
 # Load the image
-image = cv2.imread('Qno. 1.jpg') 
+image = cv2.imread('Mine.jpeg') 
 
 # Convert BGR (OpenCV's default) to RGB (Matplotlib's expected color order)
 ```
@@ -175,7 +175,7 @@ plt.show()
 #### 2.4 Add Text to the Image
 
 # Load the image
-image = cv2.imread('Qno. 1.jpg') 
+image = cv2.imread('Mine.jpeg') 
 
 # Convert BGR (OpenCV's default) to RGB (Matplotlib's expected color order)
 img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
@@ -197,7 +197,7 @@ plt.show()
 
 # Load the image
 ```
-image = cv2.imread('varshan.jpeg') 
+image = cv2.imread('Mine.jpeg') 
 image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 ```
 
@@ -266,7 +266,7 @@ plt.show()
 
 ### Step 5: Image Resizing
 ```
-image = cv2.imread('varshan.jpeg') 
+image = cv2.imread('Mine.jpeg') 
 image.shape
 ```
 
@@ -290,7 +290,7 @@ plt.show()
 ### Step 6: Image Cropping
 
 # Load the image
-image = cv2.imread('varshan.jpeg')
+image = cv2.imread('Mine.jpeg')
 
 image.shape
 
@@ -312,7 +312,7 @@ plt.show()
 ### Step 7: Image Flipping
 
 # Load the image
-image = cv2.imread('varshan.jpeg')
+image = cv2.imread('Mine.jpeg')
 
 # Flip the image horizontally (left-right)
 flipped_horizontally = cv2.flip(image, 1)
